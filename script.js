@@ -9,7 +9,7 @@ fetch(url).then((response) => {
 }).then((json) => {
 
 for(let i = 0; i < json.products.length; i++) {
-    productList.innerHTML = `
+    productList.innerHTML += `
             <li>
                 <span>${json.products[i].title}</span>
                 <span>${json.products[i].price}</span>
